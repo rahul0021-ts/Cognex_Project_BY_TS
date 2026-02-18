@@ -9,7 +9,7 @@ connectDB();
 
 const app = express();
 
-app.use(cors({origin: ["http://localhost:5173", "https://your-netlify-site.netlify.app"]}));
+app.use(cors({origin: ["http://localhost:5173", "https://lighthearted-sable-f0c8d9.netlify.app"]}));
 app.use(express.json());
 
 app.use("/api/scans", scanRoutes);
