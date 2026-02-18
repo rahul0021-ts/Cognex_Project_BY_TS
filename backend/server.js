@@ -14,6 +14,6 @@ app.use(express.json());
 
 app.use("/api/scans", scanRoutes);
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 5001, () => {
   console.log("Server running on port", process.env.PORT);
 });
