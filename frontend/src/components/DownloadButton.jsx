@@ -1,7 +1,7 @@
 const DownloadButton = ({ start, end }) => {
     const download = () => {
       window.open(
-        `http://localhost:5001/api/scans/download?start=${start}&end=${end}`
+        `https://cognex-project-by-ts.onrender.com/api/scans/download?start=${start}&end=${end}`
       );
     };
   

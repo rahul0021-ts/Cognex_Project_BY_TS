@@ -10,7 +10,7 @@ function App() {
   const [data, setData] = useState([]);
 
   const fetchData = async () => {
-    const res = await axios.get("http://localhost:5001/api/scans", {
+    const res = await axios.get("https://cognex-project-by-ts.onrender.com/api/scans", {
       params: { start, end }
     });
     setData(res.data);
